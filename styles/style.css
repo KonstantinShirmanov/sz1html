@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	height: 100%;
+}
+
+div {
+	-webkit-background-fill-color: transparent;
+}
+
+a:: hover{
+	cursor: pointer;
+}
+
+.btn {
+	text-transform: uppercase;
+	align-self: center;
+	background: linear-gradient(to right, #a21af0, #ff0072);
+	font-size: 25px;
+	letter-spacing: 2px;
+	justify-content: space-around;
+	color: text-color: #ebeced; 
+}
+
+/* header */
+.header {
+	display: block;
+	background-color: #15263e;
+	height: 50px;
+	min-width: 100%;
+   position: fixed;
+	z-index: 100;
+	top:  0;
+	left: 0;
+}
+
+.menu__list {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.menu__list-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.menu__list-item a {
+	display: flex;
+	text-decoration: none;
+	color: #ebeced;
+	font-weight: 36px; 
+	text-transform: uppercase;
+	align-self: space-around;
+}
+/*/header*/
+
+/*banner*/
+
+.fullscreen {
+  display: flex;
+  min-height: 100vh;
+  flex: 1 1 auto;
+  min-width: 100vh;
+}
+
+.bunner{
+  background-image: url("../images/fullscreen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bunner__body {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  background-color: rgba(35, 45,80, 0.7);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.bunner__title {
+  color: #ebeced;
+  font-size: 40px;
+  letter-spacing: 10px;
+  z-index: 2;
+}
+
+.bunner__text {
+  color: #ebeced;
+  font-size: 45px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  z-index: 2;
+  justify-content: space-around;
+
+  margin: 5px, 0px;
+}
+
+.bunner__text-gradient {
+  color: #a21af0 letter-spacing: 20px;
+  font-size: 90px;
+  background: linear-gradient(to right, #a21af0, #ff0072);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-width: 700;
+}
+
+.bunner__text-small {
+	color: #ebeced;
+	font-size: 23px;
+	letter-spacing: 2px;
+}
+
+/*/bunner*/
+
+/*about*/
+.about {
+	display: flex;
+	flax-direction : row;
+	justify-content: space-between;
+
+}
+.column{
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	flex : 0 0 33.333%;
+	justify-content: сenter;
+	min-width: 33.333%;
+}
+
+.column-gray{
+	background-color: #fff1: 
+}
+
+.column__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.column__content img{
+	object-fit: cover;
+	min-height: 100%;
+}
+
+.column__title {
+	color: #000;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.column__subtitle {
+	color: #a21af0;
+	font-size: 23px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.content__item{
+	display: block;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0 50px;
+	text-transform: uppercase;
+	color : #000;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.content__item::after {
+	content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 5px);
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: rgb(162, 26, 240);
+  background: linear-gradient(35deg, rgba(162, 26, 240, 1) 45%, rgba(255, 0, 114, 1) 55%);
+}
+
+/*/about*/
+
+/*contacts*/
+
+.icon__wrap {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(35, 45,80, 1);
+  border-radius: 50%;
+}
+
+.icon__wrap i.fa {
+	content: "";
+  font-size: 60px;
+  color: #fff;
+}
+
+.card__header {
+	font-size: 23px;
+	margin-left: 5px;
+}
+
+.card__item {
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+.card__wrap-column {
+	flex-direction: column;
+}
+
+.icon__wrap-gradient {
+	background: linear-gradient(35deg, rgba(162, 26, 240, 1) 45%, rgba(255, 0, 114, 1) 55%);
+}
+
+.services__wrap {
+	display: flex;
+	flex-direction: column;
+}
